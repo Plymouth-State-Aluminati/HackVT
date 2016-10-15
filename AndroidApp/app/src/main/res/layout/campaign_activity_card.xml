@@ -30,17 +30,36 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/campaign_activity_card_title"
-                tools:text="Mark: Donated $5 to Burlington Highschool"
-                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                tools:text="Backpacks for Alpacas"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_toEndOf="@+id/campaign_activity_card_image"
+                android:textColor="?android:attr/textColorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/campaign_activity_card_desc"
+                tools:text="Alpacas have to pack too!"
+                android:layout_below="@+id/campaign_activity_card_title"
                 android:layout_toEndOf="@+id/campaign_activity_card_image" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/main_activity_card_time"
-                tools:text="15 Minutes ago"
-                android:layout_below="@+id/campaign_activity_card_title"
-                android:layout_toEndOf="@+id/campaign_activity_card_image" />
+                android:layout_below="@+id/campaign_activity_card_desc"
+                android:layout_toEndOf="@+id/campaign_activity_card_image"
+                android:id="@+id/campaign_activity_card_progress"
+                tools:text="$3,500/$5,000"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/campaign_activity_card_time"
+                tools:text="30 Days Left"
+                android:layout_alignBaseline="@+id/campaign_activity_card_progress"
+                android:layout_alignBottom="@+id/campaign_activity_card_progress"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
 

@@ -36,10 +36,11 @@ public class CampaignFeedActivity extends AppCompatActivity
 
     CampaignAdapter rvAdapter;
     List<Campaign> campaignList;
+    RecyclerView rv;
 
     //BASE_URL must end in '/'
-    //String BASE_URL = "http://107.170.47.159/";
-    String BASE_URL = "http://www.mocky.io/v2/";
+    String BASE_URL = "http://107.170.47.159/";
+    //String BASE_URL = "http://www.mocky.io/v2/";
     Retrofit retrofit = new Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
@@ -68,12 +69,23 @@ public class CampaignFeedActivity extends AppCompatActivity
     }
 
     private void initializeRV() {
-        RecyclerView rv = (RecyclerView)findViewById(R.id.campaign_activity_recycler);
+        rv = (RecyclerView)findViewById(R.id.campaign_activity_recycler);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rv.setLayoutManager(llm);
-        rvAdapter = new CampaignAdapter(campaignList);
-        rv.setAdapter(rvAdapter);
-        rv.setHasFixedSize(true);
+        //rv.setAdapter(new CampaignAdapter(campaignList, new CampaignAdapter.OnItemClickListener() {
+        //    @Override
+         //   public void onItemClick(Campaign campaign) {
+         //       openCampaign(campaign.getId());
+         //   }
+        //}));
+        //rv.setHasFixedSize(true);
+    }
+
+    private void openCampaign(String id) {
+        int ID = Integer.parseInt(id);
+        Intent intent = new Intent(this, CampaignDetails.class);
+        intent.putExtra("CampaignID", ID);
+        startActivity(intent);
     }
 
     private void initializeCampaignList() {
@@ -90,7 +102,14 @@ public class CampaignFeedActivity extends AppCompatActivity
                     for (Campaign campaign :
                             response.body()) {
                         campaignList.add(campaign);
-                        rvAdapter.notifyDataSetChanged();
+                        rv.setAdapter(new CampaignAdapter(campaignList, new CampaignAdapter.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(Campaign campaign) {
+                                openCampaign(campaign.getId());
+                            }
+                        }));
+                        //rvAdapter.notifyDataSetChanged();
+                        Log.d("Response", response.body().get(0).getTitle());
                     }
                 } else {
                     // error response, no access to resource?

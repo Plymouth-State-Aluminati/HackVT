@@ -16,6 +16,7 @@ public interface DonationsApiInterface {
     @GET("feed/")
     Call<List<DonationEvent>> getDonationEvents();
 
-    @GET("5801cf0d120000ce1c32abee/")
+    //@GET("5801cf0d120000ce1c32abee/")
+    @GET("campaigns/")
     Call<List<Campaign>> getCampaigns();
 }

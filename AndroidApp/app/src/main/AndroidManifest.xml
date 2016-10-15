@@ -26,12 +26,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.aluminati.hack.MainActivity" />
         </activity>
-        <activity android:name=".CampaignFeedActivity"
+        <activity
+            android:name=".CampaignFeedActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".CampaignDetails"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.aluminati.hack.MainActivity" />
-        </activity>
+                android:value="com.aluminati.hack.CampaignFeedActivity" /></activity>
     </application>
 
 </manifest>

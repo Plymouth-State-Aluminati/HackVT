@@ -33,8 +33,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".Activities.CampaignDetails"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".Activities.CampaignDetails">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.aluminati.hack.Activities.CampaignFeedActivity" />

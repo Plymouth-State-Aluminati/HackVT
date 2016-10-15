@@ -129,12 +129,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.0.0\jars\classes.jar"
+        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.github.lzyzsd\circleprogress\1.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\de.hdodenhof-circleimageview-2.0.0_dd0329314cfac9c5adfb62db75390f9405d3848f\classes.dex" />
+        sha1="e6f9fb0d2ea982d656d6dca785a9097659395874">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.lzyzsd-circleprogress-1.1.0_a8b027c2ebff47e1d14e798851e92566b55a66f7\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -144,6 +144,15 @@
         revision="24.0.2"
         sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
         <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_4b978832022cfcda1795ac4513ec1086717f8e55\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\de.hdodenhof-circleimageview-2.0.0_dd0329314cfac9c5adfb62db75390f9405d3848f\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -187,7 +196,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="d5efc251375fc8824930081130e22b280a8c98cc">
+        sha1="c83ee21d18f70f9e0cea42ce398029ce8726da40">
         <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_61fbc03b46099e0f7fb2ea1de44d800c3f225f9b\classes.dex" />
     </item>
     <item
@@ -223,7 +232,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="ffcb5aaa1b0274585472d127050bd87e5a920b6b">
+        sha1="6067147a526a1afbfbd6e1c0a0a38b0b610121ae">
         <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d8408aef9600d1118961c89ad71d10c3e3c451c7\classes.dex" />
     </item>
     <item

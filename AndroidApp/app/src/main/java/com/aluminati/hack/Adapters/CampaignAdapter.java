@@ -2,6 +2,7 @@ package com.aluminati.hack.Adapters;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 
 import com.aluminati.hack.Objects.Campaign;
 import com.aluminati.hack.R;
+import com.github.lzyzsd.circleprogress.CircleProgress;
 
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
@@ -33,6 +35,7 @@ public class CampaignAdapter extends RecyclerView.Adapter<CampaignAdapter.Campai
         TextView cardDesc;
         TextView cardProgress;
         TextView cardDeadline;
+        CircleProgress cProgress;
 
         CampaignViewHolder(View itemView) {
             super(itemView);
@@ -41,6 +44,7 @@ public class CampaignAdapter extends RecyclerView.Adapter<CampaignAdapter.Campai
             cardDesc = (TextView)itemView.findViewById(R.id.campaign_activity_card_desc);
             cardProgress = (TextView)itemView.findViewById(R.id.campaign_activity_card_progress);
             cardDeadline = (TextView)itemView.findViewById(R.id.campaign_activity_card_time);
+            cProgress = (CircleProgress)itemView.findViewById(R.id.circle_progress);
         }
 
         void bind(final Campaign campaign, final OnItemClickListener listener) {
@@ -82,7 +86,13 @@ public class CampaignAdapter extends RecyclerView.Adapter<CampaignAdapter.Campai
 
         holder.cardTitle.setText(campaigns.get(position).getTitle());
         holder.cardDesc.setText(campaigns.get(position).getDesc());
-        String progress = "$" + campaigns.get(position).getCurrent() + "/$" + campaigns.get(position).getTarget();
+        Double current = Double.parseDouble(campaigns.get(position).getCurrent());
+        Double target = Double.parseDouble(campaigns.get(position).getTarget());
+        Double percent = (current/target)*100;
+        int percentage = percent.intValue();
+        holder.cProgress.setProgress(percentage);
+        Log.d("Percent", percentage+"");
+        String progress = "$" + current + "/$" + target;
         holder.cardProgress.setText(progress);
         //holder.cardDeadline.setText((campaigns.get(position).getDeadline()));
         holder.cardDeadline.setText(daysToDeadline + " Days Left");

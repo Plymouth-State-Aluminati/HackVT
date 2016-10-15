@@ -19,28 +19,19 @@
             android:padding="16dp"
             >
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/ic_launcher"
-                android:id="@+id/main_activity_card_image"
-                android:layout_marginEnd="8dp" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/main_activity_card_title"
                 tools:text="Mark: Donated $5 to Burlington Highschool"
-                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                android:layout_toEndOf="@+id/main_activity_card_image" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/main_activity_card_time"
                 tools:text="15 Minutes ago"
-                android:layout_below="@+id/main_activity_card_title"
-                android:layout_toEndOf="@+id/main_activity_card_image" />
+                android:layout_below="@+id/main_activity_card_title" />
 
         </RelativeLayout>
 

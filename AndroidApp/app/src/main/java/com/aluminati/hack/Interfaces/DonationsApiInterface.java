@@ -31,4 +31,7 @@ public interface DonationsApiInterface {
 
     @GET("feed?")
     Call<List<DonationEvent>> getDonationHistory(@Query("userId") String userId);
+
+    @GET("campaigns?")
+    Call<Campaign> getCampaign(@Query("campaignId") String campaignId);
 }

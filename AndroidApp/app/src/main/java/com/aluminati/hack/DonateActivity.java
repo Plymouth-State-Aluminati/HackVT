@@ -1,6 +1,8 @@
 package com.aluminati.hack;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -31,6 +33,7 @@ public class DonateActivity extends AppCompatActivity {
 
     private int campaignID = 0;
     private String campaignTitle = "Unknown Title";
+    int userId = 4;
 
     String BASE_URL = "http://107.170.47.159/";
     Retrofit retrofit = new Retrofit.Builder()
@@ -39,7 +42,6 @@ public class DonateActivity extends AppCompatActivity {
             .build();
 
     DonationsApiInterface donationsApiInterface = retrofit.create(DonationsApiInterface.class);
-    private int donorID = 4;
 
 
     @Override
@@ -72,10 +74,11 @@ public class DonateActivity extends AppCompatActivity {
         String behalfOf = editBehalf.getText().toString();
         String comment = editComments.getText().toString();
         campaignTitle = editRecipient.getText().toString();
-        Call<Donation> call = donationsApiInterface.createDonation(new Donation(donorID, amount, behalfOf, comment, campaignID));
+        Call<Donation> call = donationsApiInterface.createDonation(new Donation(userId, amount, behalfOf, comment, campaignID));
         call.enqueue(new Callback<Donation>() {
             @Override
             public void onResponse(Call<Donation> call, Response<Donation> response) {
+                Log.d("Request", call.request().body().toString());
                 if (response.isSuccessful()) {
                     Log.d("POST", "Successful");
                     finish();

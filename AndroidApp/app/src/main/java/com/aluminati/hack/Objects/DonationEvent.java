@@ -1,11 +1,11 @@
-package com.aluminati.hack;
+package com.aluminati.hack.Objects;
 
 
 /**
  * Created by Devon on 10/14/2016.
  */
 
-public class DonationEvent extends FeedCard{
+public class DonationEvent {
 
     private String id;
     private String donor;

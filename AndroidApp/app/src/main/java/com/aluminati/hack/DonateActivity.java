@@ -7,7 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.widget.EditText;
 
-import java.util.List;
+import com.aluminati.hack.Interfaces.DonationsApiInterface;
+import com.aluminati.hack.Objects.Donation;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

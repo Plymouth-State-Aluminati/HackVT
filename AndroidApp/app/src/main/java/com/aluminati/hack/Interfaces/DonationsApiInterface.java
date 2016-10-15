@@ -1,4 +1,8 @@
-package com.aluminati.hack;
+package com.aluminati.hack.Interfaces;
+
+import com.aluminati.hack.Objects.Campaign;
+import com.aluminati.hack.Objects.Donation;
+import com.aluminati.hack.Objects.DonationEvent;
 
 import java.util.List;
 
@@ -18,7 +22,6 @@ public interface DonationsApiInterface {
     @GET("feed/")
     Call<List<DonationEvent>> getDonationEvents();
 
-    //@GET("5801cf0d120000ce1c32abee/")
     @GET("campaigns/")
     Call<List<Campaign>> getCampaigns();
 

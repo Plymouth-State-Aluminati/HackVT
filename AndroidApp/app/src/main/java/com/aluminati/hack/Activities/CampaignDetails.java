@@ -1,4 +1,4 @@
-package com.aluminati.hack;
+package com.aluminati.hack.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,9 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import com.aluminati.hack.DonateActivity;
+import com.aluminati.hack.R;
 
 public class CampaignDetails extends AppCompatActivity {
     int campaignID;

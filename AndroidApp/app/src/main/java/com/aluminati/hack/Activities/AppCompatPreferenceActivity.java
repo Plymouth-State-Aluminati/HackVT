@@ -1,4 +1,4 @@
-package com.aluminati.hack;
+package com.aluminati.hack.Activities;
 
 import android.content.res.Configuration;
 import android.os.Bundle;

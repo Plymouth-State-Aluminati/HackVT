@@ -1,12 +1,14 @@
-package com.aluminati.hack;
+package com.aluminati.hack.Adapters;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.TextView;
+
+import com.aluminati.hack.Objects.Campaign;
+import com.aluminati.hack.R;
 
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
@@ -20,7 +22,7 @@ import static org.joda.time.Days.daysBetween;
 /**
  * Created by Devon on 10/14/2016.
  */
-class CampaignAdapter extends RecyclerView.Adapter<CampaignAdapter.CampaignViewHolder>{
+public class CampaignAdapter extends RecyclerView.Adapter<CampaignAdapter.CampaignViewHolder>{
 
     private List<Campaign> campaigns;
     OnItemClickListener listener;
@@ -50,12 +52,12 @@ class CampaignAdapter extends RecyclerView.Adapter<CampaignAdapter.CampaignViewH
         }
     }
 
-    CampaignAdapter(List<Campaign> campaigns, OnItemClickListener listener){
+    public CampaignAdapter(List<Campaign> campaigns, OnItemClickListener listener){
         this.campaigns = campaigns;
         this.listener = listener;
     }
 
-    interface OnItemClickListener {
+    public interface OnItemClickListener {
         void onItemClick(Campaign campaign);
     }
 

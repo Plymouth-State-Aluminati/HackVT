@@ -1,4 +1,4 @@
-package com.aluminati.hack;
+package com.aluminati.hack.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +16,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.aluminati.hack.Adapters.DonationEventAdapter;
+import com.aluminati.hack.DonateActivity;
+import com.aluminati.hack.Interfaces.DonationsApiInterface;
+import com.aluminati.hack.Objects.DonationEvent;
+import com.aluminati.hack.R;
 
 import java.util.ArrayList;
 import java.util.List;

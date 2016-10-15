@@ -1,4 +1,4 @@
-package com.aluminati.hack;
+package com.aluminati.hack.Adapters;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -7,16 +7,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.aluminati.hack.Objects.DonationEvent;
+import com.aluminati.hack.R;
+
 import java.util.List;
 
 /**
  * Created by Devon on 10/14/2016.
  */
-class DonationEventAdapter extends RecyclerView.Adapter<DonationEventAdapter.EventViewHolder>{
+public class DonationEventAdapter extends RecyclerView.Adapter<DonationEventAdapter.EventViewHolder>{
 
     private List<DonationEvent> donationEvents;
 
-    DonationEventAdapter(List<DonationEvent> donationEvents){
+    public DonationEventAdapter(List<DonationEvent> donationEvents){
         this.donationEvents = donationEvents;
     }
 

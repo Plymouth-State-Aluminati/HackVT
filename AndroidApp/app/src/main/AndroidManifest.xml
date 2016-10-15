@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,20 +24,20 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.aluminati.hack.MainActivity" />
+                android:value="com.aluminati.hack.Activities.MainActivity" />
         </activity>
         <activity
-            android:name=".CampaignFeedActivity"
+            android:name=".Activities.CampaignFeedActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".CampaignDetails"
+            android:name=".Activities.CampaignDetails"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.aluminati.hack.CampaignFeedActivity" />
+                android:value="com.aluminati.hack.Activities.CampaignFeedActivity" />
         </activity>
         <activity
-            android:name=".SettingsActivity"
+            android:name=".Activities.SettingsActivity"
             android:label="@string/title_activity_settings"></activity>
     </application>
 

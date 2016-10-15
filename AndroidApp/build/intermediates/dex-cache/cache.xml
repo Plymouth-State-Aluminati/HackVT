@@ -39,6 +39,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Devon\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.1.0_6473b9b04a9ba0c1862c53ab6357a2397ac8e5ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_de5d95e1563238d51e6ccd7543c64e175f45f3da\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -57,12 +75,75 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_70ec2f5f95a78719a9082dbf30eb2d8aa1a4783b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Devon\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.7_81ee69e625af5a9ec4dbf5b03025941b2d91bf3f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_15611c8c79b8ebeeafdc118344969f66847b3317\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
         <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_3c4bb27a9b083b88acbea59bf083e0af9ada0b50\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_6e02f46fdfb27d68ee6a7db103b20c407ea1f074\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_4b978832022cfcda1795ac4513ec1086717f8e55\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Devon\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.1.0_876d1bbe30354251e1b8915a062b05ee94a03804\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Devon\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.4.0_e32d75de21e94455efefdf47a5a6e7c78b5cc9a5\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,6 +165,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5cae097a3a3c6d0ea3f6453abbb741e8fd6fd494">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_61fbc03b46099e0f7fb2ea1de44d800c3f225f9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -93,11 +183,29 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Devon\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-alpha8\constraint-layout-solver-1.0.0-alpha8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="80c371a4fd5e1b77f0e3a25b171356878543ffdd">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-alpha8_8376743285a60878ea1b19a4297ad065ddb3bbd9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_9ce74a1fa12e134e164d9de5246bc79652bbb37e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="1f076ba487845d0dfcf7a9592201bf593de97c68">
+        sha1="69a6c6c837e7e4d1ce1d9280706eccadb0852f77">
         <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d8408aef9600d1118961c89ad71d10c3e3c451c7\classes.dex" />
     </item>
     <item
@@ -120,114 +228,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.2.1_41a16ec45f18527f0886e516a90ccb9f27018511\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_36655d1f387fedc309311257527b62db6d88a6ca\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Devon\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.1.0_6473b9b04a9ba0c1862c53ab6357a2397ac8e5ff\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_de5d95e1563238d51e6ccd7543c64e175f45f3da\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_70ec2f5f95a78719a9082dbf30eb2d8aa1a4783b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_15611c8c79b8ebeeafdc118344969f66847b3317\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_6e02f46fdfb27d68ee6a7db103b20c407ea1f074\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_4b978832022cfcda1795ac4513ec1086717f8e55\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Devon\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.4.0_e32d75de21e94455efefdf47a5a6e7c78b5cc9a5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d3b3650189a5ffa824508e8daba27db6c83e7b27">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_61fbc03b46099e0f7fb2ea1de44d800c3f225f9b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Devon\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-alpha8\constraint-layout-solver-1.0.0-alpha8.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="80c371a4fd5e1b77f0e3a25b171356878543ffdd">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-alpha8_8376743285a60878ea1b19a4297ad065ddb3bbd9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_9ce74a1fa12e134e164d9de5246bc79652bbb37e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -237,12 +237,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.2.1_41a16ec45f18527f0886e516a90ccb9f27018511\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="867dad63c33388ff8c7644b236579355036d075f">
         <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_0d0a06f6be98b860cbf0f6b5a63e20fb7e8fb247\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_36655d1f387fedc309311257527b62db6d88a6ca\classes.dex" />
     </item>
 
 </items>

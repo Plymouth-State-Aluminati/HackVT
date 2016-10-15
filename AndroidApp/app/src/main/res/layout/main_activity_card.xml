@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/main_activity_card_title"
-                tools:text="Mark donated $5 to Burlington Highschool"
+                tools:text="Mark: Donated $5 to Burlington Highschool"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                 android:layout_toEndOf="@+id/main_activity_card_image" />
 

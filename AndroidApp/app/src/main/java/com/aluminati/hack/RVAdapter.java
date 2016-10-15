@@ -41,8 +41,9 @@ class RVAdapter extends RecyclerView.Adapter<RVAdapter.EventViewHolder>{
 
     @Override
     public void onBindViewHolder(EventViewHolder holder, int position) {
-        holder.cardTitle.setText(donationEvents.get(position).getTitle());
-        holder.cardTime.setText(donationEvents.get(position).getTime());
+        String cardText =  donationEvents.get(position).getDonor() + ": " + donationEvents.get(position).getEvent();
+        holder.cardTitle.setText(cardText);
+        holder.cardTime.setText(donationEvents.get(position).getTimestamp());
     }
 
     @Override

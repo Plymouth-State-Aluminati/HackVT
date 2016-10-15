@@ -8,7 +8,7 @@
 
     <ImageView
         android:layout_width="0dp"
-        app:srcCompat="@drawable/alpaca"
+        app:srcCompat="@drawable/lab"
         android:id="@+id/imageView3"
         android:adjustViewBounds="true"
         app:layout_constraintTop_toTopOf="parent"

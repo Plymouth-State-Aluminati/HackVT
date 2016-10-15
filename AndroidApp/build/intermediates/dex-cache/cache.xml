@@ -129,6 +129,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\de.hdodenhof-circleimageview-2.0.0_dd0329314cfac9c5adfb62db75390f9405d3848f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -178,7 +187,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="0d1332d74057b1c156f11f4c6ebe7217b9a03dea">
+        sha1="d5efc251375fc8824930081130e22b280a8c98cc">
         <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_61fbc03b46099e0f7fb2ea1de44d800c3f225f9b\classes.dex" />
     </item>
     <item
@@ -252,6 +261,15 @@
         revision="24.0.2"
         sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
         <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.2.1_41a16ec45f18527f0886e516a90ccb9f27018511\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Devon\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_25f008707936417c7ac7e334399b3d7901602827\classes.dex" />
     </item>
     <item
         is-multidex="true"

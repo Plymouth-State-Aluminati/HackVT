@@ -2,9 +2,12 @@ package com.aluminati.hack.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -14,10 +17,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.aluminati.hack.Adapters.CampaignAdapter;
+import com.aluminati.hack.Adapters.DonationEventAdapter;
 import com.aluminati.hack.DonateActivity;
 import com.aluminati.hack.Interfaces.DonationsApiInterface;
-import com.aluminati.hack.Objects.Campaign;
+import com.aluminati.hack.Objects.DonationEvent;
 import com.aluminati.hack.R;
 
 import java.util.ArrayList;
@@ -30,36 +33,30 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class CampaignFeedActivity extends AppCompatActivity
+public class HistoryActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    //Bind the main_activity_recyclerview to the variable rv
-    //@BindView(R.id.main_activity_recycler)
-    //RecyclerView rv;
-
-    CampaignAdapter rvAdapter;
-    List<Campaign> campaignList;
-    RecyclerView rv;
+    DonationEventAdapter rvAdapter;
+    List<DonationEvent> donationEventList;
 
     //BASE_URL must end in '/'
     String BASE_URL = "http://107.170.47.159/";
-    //String BASE_URL = "http://www.mocky.io/v2/";
     Retrofit retrofit = new Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build();
+    private String userId = "4";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
-        setContentView(R.layout.activity_campaign_feed);
+        setContentView(R.layout.activity_history);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-
-        toolbar.setTitle("Donation Campaigns");
+        toolbar.setTitle("My Donations");
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout_campaign);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -69,52 +66,35 @@ public class CampaignFeedActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        initializeCampaignList();
+        initializeDonationEventList();
         initializeRV();
     }
 
     private void initializeRV() {
-        rv = (RecyclerView)findViewById(R.id.campaign_activity_recycler);
+        RecyclerView rv = (RecyclerView)findViewById(R.id.history_activity_recycler);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rv.setLayoutManager(llm);
-        //rv.setAdapter(new CampaignAdapter(campaignList, new CampaignAdapter.OnItemClickListener() {
-        //    @Override
-         //   public void onItemClick(Campaign campaign) {
-         //       openCampaign(campaign.getId());
-         //   }
-        //}));
-        //rv.setHasFixedSize(true);
+        rvAdapter = new DonationEventAdapter(donationEventList);
+        rv.setAdapter(rvAdapter);
+        rv.setHasFixedSize(true);
     }
 
-    private void openCampaign(String id) {
-        int ID = Integer.parseInt(id);
-        Intent intent = new Intent(this, CampaignDetails.class);
-        intent.putExtra("CampaignID", ID);
-        startActivity(intent);
-    }
-
-    private void initializeCampaignList() {
-        campaignList = new ArrayList<>();
+    private void initializeDonationEventList() {
+        donationEventList = new ArrayList<>();
 
         DonationsApiInterface donationsApiInterface = retrofit.create(DonationsApiInterface.class);
 
-        Call<List<Campaign>> call = donationsApiInterface.getCampaigns();
-        call.enqueue(new Callback<List<Campaign>>() {
+        Call<List<DonationEvent>> call = donationsApiInterface.getDonationHistory(userId);
+        call.enqueue(new Callback<List<DonationEvent>>() {
             @Override
-            public void onResponse(Call<List<Campaign>> call, Response<List<Campaign>> response) {
+            public void onResponse(Call<List<DonationEvent>> call, Response<List<DonationEvent>> response) {
+                Log.d("Request", call.request().toString());
                 if (response.isSuccessful()) {
                     Log.d("Response", "Successful");
-                    for (Campaign campaign :
+                    for (DonationEvent donationEvent :
                             response.body()) {
-                        campaignList.add(campaign);
-                        rv.setAdapter(new CampaignAdapter(campaignList, new CampaignAdapter.OnItemClickListener() {
-                            @Override
-                            public void onItemClick(Campaign campaign) {
-                                openCampaign(campaign.getId());
-                            }
-                        }));
-                        //rvAdapter.notifyDataSetChanged();
-                        Log.d("Response", response.body().get(0).getTitle());
+                        donationEventList.add(donationEvent);
+                        rvAdapter.notifyDataSetChanged();
                     }
                 } else {
                     // error response, no access to resource?
@@ -123,7 +103,7 @@ public class CampaignFeedActivity extends AppCompatActivity
             }
 
             @Override
-            public void onFailure(Call<List<Campaign>> call, Throwable t) {
+            public void onFailure(Call<List<DonationEvent>> call, Throwable t) {
                 // something went completely south (like no internet connection)
                 Log.d("Error", t.getMessage());
             }
@@ -156,6 +136,8 @@ public class CampaignFeedActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            startActivity(intent);
             return true;
         }
 
@@ -185,7 +167,7 @@ public class CampaignFeedActivity extends AppCompatActivity
             startActivity(intent);
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout_campaign);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }

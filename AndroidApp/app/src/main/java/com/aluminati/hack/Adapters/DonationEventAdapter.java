@@ -10,6 +10,10 @@ import android.widget.TextView;
 import com.aluminati.hack.Objects.DonationEvent;
 import com.aluminati.hack.R;
 
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+
 import java.util.List;
 
 /**
@@ -46,7 +50,11 @@ public class DonationEventAdapter extends RecyclerView.Adapter<DonationEventAdap
     public void onBindViewHolder(EventViewHolder holder, int position) {
         String cardText =  donationEvents.get(position).getDonor() + ": " + donationEvents.get(position).getEvent();
         holder.cardTitle.setText(cardText);
-        holder.cardTime.setText(donationEvents.get(position).getTimestamp());
+        String timeStamp = donationEvents.get(position).getTimestamp();
+        DateTimeFormatter formatter = DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss");
+        DateTime time = formatter.parseDateTime(timeStamp);
+        DateTimeFormatter dtfOut = DateTimeFormat.forPattern("MMM dd h:mm a");
+        holder.cardTime.setText(dtfOut.print(time));
     }
 
     @Override

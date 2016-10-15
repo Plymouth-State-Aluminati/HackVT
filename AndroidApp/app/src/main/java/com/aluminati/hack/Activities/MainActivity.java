@@ -56,14 +56,16 @@ public class MainActivity extends AppCompatActivity
         ButterKnife.bind(this);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        toolbar.setTitle("Recent Donations");
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(getApplicationContext(), DonateActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -146,6 +148,8 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            startActivity(intent);
             return true;
         }
 
@@ -162,7 +166,7 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, DonateActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_my_donations) {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, HistoryActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_recent_donations) {
             Intent intent = new Intent(this, MainActivity.class);

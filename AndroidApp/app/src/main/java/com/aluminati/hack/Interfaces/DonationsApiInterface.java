@@ -10,6 +10,7 @@ import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 /**
  * Created by Devon on 10/14/2016.
@@ -27,4 +28,7 @@ public interface DonationsApiInterface {
 
     @POST("donation/")
     Call<Donation> createDonation(@Body Donation donation);
+
+    @GET("feed?")
+    Call<List<DonationEvent>> getDonationHistory(@Query("userId") String userId);
 }

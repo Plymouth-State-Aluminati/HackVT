@@ -12,11 +12,11 @@ import java.util.List;
 /**
  * Created by Devon on 10/14/2016.
  */
-class RVAdapter extends RecyclerView.Adapter<RVAdapter.EventViewHolder>{
+class DonationEventAdapter extends RecyclerView.Adapter<DonationEventAdapter.EventViewHolder>{
 
     private List<DonationEvent> donationEvents;
 
-    RVAdapter(List<DonationEvent> donationEvents){
+    DonationEventAdapter(List<DonationEvent> donationEvents){
         this.donationEvents = donationEvents;
     }
 

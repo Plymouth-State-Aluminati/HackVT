@@ -5,7 +5,7 @@ package com.aluminati.hack;
  * Created by Devon on 10/14/2016.
  */
 
-public class DonationEvent {
+public class DonationEvent extends FeedCard{
 
     private String id;
     private String donor;

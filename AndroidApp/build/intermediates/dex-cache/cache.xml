@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_2fb0ed7e525d705411b23bb2c6fb58987bd312fa\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
         <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_6131f8a4714c08df7ef75ddb6f43a0a532eed273\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_2fb0ed7e525d705411b23bb2c6fb58987bd312fa\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -169,7 +169,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="5cae097a3a3c6d0ea3f6453abbb741e8fd6fd494">
+        sha1="97ac6b1dab77cbf341c77e831b442debe5b3771c">
         <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_61fbc03b46099e0f7fb2ea1de44d800c3f225f9b\classes.dex" />
     </item>
     <item
@@ -205,7 +205,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="69a6c6c837e7e4d1ce1d9280706eccadb0852f77">
+        sha1="5178915b6f2ded530b4542bfe0a99ad83e882b6b">
         <dex dex="C:\Users\Devon\Documents\HackVT Project\HackVT\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d8408aef9600d1118961c89ad71d10c3e3c451c7\classes.dex" />
     </item>
     <item

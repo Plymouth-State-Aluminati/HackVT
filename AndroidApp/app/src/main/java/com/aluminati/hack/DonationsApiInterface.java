@@ -13,6 +13,9 @@ public interface DonationsApiInterface {
 // Request method and URL specified in the annotation
     // Callback for the parsed response is the last parameter
 
-    @GET("58018ce81200007d1632abd8")
+    @GET("feed/")
     Call<List<DonationEvent>> getDonationEvents();
+
+    @GET("5801cf0d120000ce1c32abee/")
+    Call<List<Campaign>> getCampaigns();
 }

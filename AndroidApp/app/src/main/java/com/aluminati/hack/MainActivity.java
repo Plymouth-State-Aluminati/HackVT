@@ -156,16 +156,16 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, DonateActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_my_donations) {
-            Intent intent = new Intent(this, CampaignFeedActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_recent_donations) {
-            Intent intent = new Intent(this, DonateActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_Campaigns) {
             Intent intent = new Intent(this, CampaignFeedActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_Settings) {
-            Intent intent = new Intent(this, DonateActivity.class);
+            Intent intent = new Intent(this, SettingsActivity.class);
             startActivity(intent);
         }
 

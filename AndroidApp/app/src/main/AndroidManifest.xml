@@ -28,13 +28,17 @@
         </activity>
         <activity
             android:name=".CampaignFeedActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".CampaignDetails"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".CampaignDetails"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.aluminati.hack.CampaignFeedActivity" /></activity>
+                android:value="com.aluminati.hack.CampaignFeedActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
     </application>
 
 </manifest>

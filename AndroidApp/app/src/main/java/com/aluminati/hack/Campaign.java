@@ -54,6 +54,14 @@ public class Campaign{
      * The target
      */
     public String getTarget() {
+        if (target != null)
+        {
+            int endIndex = target.lastIndexOf(".");
+            if (endIndex != -1)
+            {
+                return target.substring(0, endIndex); // not forgot to put check if(endIndex != -1)
+            }
+        }
         return target;
     }
 
@@ -72,6 +80,14 @@ public class Campaign{
      * The current
      */
     public String getCurrent() {
+        if (current != null)
+        {
+            int endIndex = current.lastIndexOf(".");
+            if (endIndex != -1)
+            {
+                return current.substring(0, endIndex); // not forgot to put check if(endIndex != -1)
+            }
+        }
         return current;
     }
 

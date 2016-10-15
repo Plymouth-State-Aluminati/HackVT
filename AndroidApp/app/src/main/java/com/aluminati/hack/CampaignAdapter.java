@@ -8,7 +8,14 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.TextView;
 
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+
 import java.util.List;
+
+import static org.joda.time.Days.daysBetween;
 
 /**
  * Created by Devon on 10/14/2016.
@@ -62,11 +69,21 @@ class CampaignAdapter extends RecyclerView.Adapter<CampaignAdapter.CampaignViewH
 
     @Override
     public void onBindViewHolder(CampaignViewHolder holder, int position) {
+
+        DateTimeFormatter formatter = DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss");
+        DateTime deadline = formatter.parseDateTime(campaigns.get(position).getDeadline());
+
+        DateTimeZone EST = DateTimeZone.forID("US/Eastern");
+        DateTime now = new DateTime();
+        int daysToDeadline = daysBetween(now.withTimeAtStartOfDay(),
+                deadline.withTimeAtStartOfDay()).getDays();
+
         holder.cardTitle.setText(campaigns.get(position).getTitle());
         holder.cardDesc.setText(campaigns.get(position).getDesc());
         String progress = "$" + campaigns.get(position).getCurrent() + "/$" + campaigns.get(position).getTarget();
         holder.cardProgress.setText(progress);
-        holder.cardDeadline.setText((campaigns.get(position).getDeadline()));
+        //holder.cardDeadline.setText((campaigns.get(position).getDeadline()));
+        holder.cardDeadline.setText(daysToDeadline + " Days Left");
         holder.bind(campaigns.get(position), listener);
     }
 
